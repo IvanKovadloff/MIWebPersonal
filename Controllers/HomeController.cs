@@ -17,7 +17,25 @@ public class HomeController : Controller
     {
         return View();
     }
-
+      public IActionResult lugares()
+    {
+        
+        return View();
+    }
+     public IActionResult aboutus()
+    {
+        
+        return View();
+    }
+     public IActionResult contacto()
+    {
+        
+        return View();
+    }
+    
+    
+    
+    
     public IActionResult Privacy()
     {
         return View();

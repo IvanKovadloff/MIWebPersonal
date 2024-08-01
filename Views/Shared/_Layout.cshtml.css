@@ -1,48 +1,118 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿header{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(117, 115, 170);
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 1px 4px 11px 6px rgba(0, 3, 0, 0.2);
+  z-index: 2;
 }
 
-a {
-  color: #0077cc;
+header a{
+  margin-left:1%;
+  margin-top: 0.5%;
+  width: 10%;
 }
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
+header a img{
   width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+  border-radius: 50px;
+}
+
+header nav{
+  width: 55%;
+}
+header nav ul{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+header nav ul li{
+  list-style: none;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+header nav ul li a{
+  text-decoration: none;
+  color: rgb(218, 218, 235);
+  font-size: 1.4vw;
+  width: 100%;
+  text-align: center;
+  transition: color ease-in 0.2s;
+}
+header nav ul li a:hover{
+  color: rgb(250, 116, 116);
+}
+
+header form{
+  width: 25%;
+  height: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+header form input[type*="search"]{
+  width: 80%;
+  border: none;
+  inline-size: none;
+  font-size: 1vw;
+  border-radius: 10px;
+  padding: 1%;
+  padding-left: 5px;
+
+}
+header form input[type*="submit"]{
+  width: 30%;
+  color: rgb(218, 218, 235);
+  font-size: 1vw;;
+  background-color: rgb(117, 115, 170);
+  border: none;
+  cursor: pointer;
+}
+footer{
+  background-color: rgb(117, 115, 170);
+}
+footer section{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: row;
+}
+footer section div{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4vw;
+}
+footer section div h2{
+  color: rgb(218, 218, 235);
+}
+footer section div ul li{
+  color: rgb(218, 218, 235);
+}
+footer section div img{
+  width: 40%;
+  border-radius: 50px;
+  margin-bottom: 3%;
+  margin-top: 5%;
+}
+
+footer section div .social-media{
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 20%;
+}
+footer section div .social-media li{
+  width: 25%;
+}
+footer section div .social-media li img{
+  width: 100%;
+  border-radius: 0;
+}
+footer marquee{
+  color: rgb(218, 218, 235);
+  margin-top: 2%;
 }
