@@ -19,7 +19,9 @@ public class HomeController : Controller
     }
       public IActionResult lugares()
     {
-        
+         ViewBag.ListaTitulos=Datos.ListaTitulos;
+         ViewBag.ListaFotos=Datos.ListaFotos;
+         ViewBag.ListaDesc=Datos.ListaDesc;
         return View();
     }
      public IActionResult aboutus()

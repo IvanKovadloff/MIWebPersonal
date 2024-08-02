@@ -1,5 +1,17 @@
 <main class="main-lugares">
     <section>
+    @foreach(string foto in ViewBag.ListaFotos)
+            {
+                <div><img src="/img/@foto"></div>
+            }
+    @for (int i = 0; i < 4; i++)
+        {
+           <div>
+           <h1>@ViewBag.ListaTitulos[i]</h1>
+           <img src="/img/@ViewBag.ListaFotos[i]">
+           <p>@ViewBag.Listadesc[i]</p>
+           </div>
+        }
       <div>
       <h1>Tel aviv</h1>
       <img src="/img/tlv.webp"/>
